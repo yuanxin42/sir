@@ -22,14 +22,18 @@
             <h3 class="listTit">author--@原鑫</h3>
             <p>现在就职于360企业安全，担任前端开发职位。</p>
             <ul class="listItems">
-                <li><a href="https://github.com/yuanxin666">github</a></li>
-                <li><a href="https://blog.csdn.net/qq_37339364">csdn博客</a></li>
+                <li>
+                    <a href="https://github.com/yuanxin666">github</a>
+                </li>
+                <li>
+                    <a href="https://blog.csdn.net/qq_37339364">csdn博客</a>
+                </li>
                 <li>333</li>
                 <li>444</li>
             </ul>
 
         </div>
-        <div class="listR">123</div>
+        <div class="listR"><a href="/package">组件文档</a></div>
     </div>
 </template>
 
@@ -70,15 +74,14 @@ export default {
             li {
                 margin-top: 10px;
                 color: #333;
-                a{
+                a {
                     color: #333;
                 }
             }
         }
     }
     .listR {
-        flex: 3;
-        // background: blue;
+        flex: 3; // background: blue;
     }
 }
 </style>

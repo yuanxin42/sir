@@ -1,6 +1,7 @@
 <template>
   <div>
     <page-head></page-head>
+    <page-main></page-main>
     <page-list></page-list>
     <div class="foot">Design by @原鑫</div>
   </div>
@@ -8,6 +9,7 @@
 
 <script>
 import pageHead from './pageHead'
+import pageMain from './pageMain'
 import pageList from './pageList'
 export default {
   data () {
@@ -16,7 +18,8 @@ export default {
   },
   components: {
     pageHead,
-    pageList
+    pageList,
+    pageMain
   }
 }
 </script>

@@ -12,8 +12,6 @@ export default {
 
 <style>
 *{
-  margin: 0;
-  padding: 0;
   font-family:"微软雅黑";
 }
 a{

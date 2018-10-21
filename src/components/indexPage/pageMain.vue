@@ -8,7 +8,7 @@
                     <img title="0.0.1" src="@/assets/image/qnpm-0.0.3-red.svg">
                 </div>
                 <div class="blockDesR">
-                    $ cnpm install @test/sir
+                    $ cnpm install sirpackages
                 </div>
             </div>
             <p class="blockLast">使用过程中如果出现任何问题联系--

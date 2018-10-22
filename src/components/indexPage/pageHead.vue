@@ -49,6 +49,7 @@ export default {
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
+    background: #fff;
     display: flex;
     justify-content: space-between;
     .logo {

@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "less": "^3.8.1",
-    "sirpackages": "^1.0.6",
+    "sirpackages": "^1.0.7",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

@@ -23,7 +23,7 @@
             <p>现在就职于360企业安全，担任前端开发职位。</p>
             <ul class="listItems">
                 <li>
-                    <a href="https://github.com/yuanxin666">github</a>
+                    <a target="black" href="https://github.com/yuanxin666">github</a>
                 </li>
                 <li>
                     <a href="https://blog.csdn.net/qq_37339364">csdn博客</a>
@@ -33,7 +33,7 @@
             </ul>
 
         </div>
-        <div class="listR"><a href="/package">组件文档</a></div>
+        <div class="listR"><a target="black" href="/package">组件文档</a></div>
     </div>
 </template>
 

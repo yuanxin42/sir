@@ -4,22 +4,24 @@
 
     <div class="contain">
       <sir-tabs class="sitTabs" tabPosition='left' labelwidth='120px'>
-        <sir-tab label="contain布局" name="first1">我是tab11
-          <sir-container></sir-container>
-        </sir-tab>
-        <sir-tab label="card卡片" name="first2">我是tab2</sir-tab>
-        <sir-tab label="navmenu导航菜单" name="first3">我是tab4</sir-tab>
-        <sir-tab label="scrolltop滚动条" name="first5">我是tab5</sir-tab>
-        <sir-tab label="tabs选项卡" name="first4">我是tab6</sir-tab>
+        <sir-tab width="100%" label="contain布局" name="first1"><sirShowContainer></sirShowContainer></sir-tab>
+        <sir-tab width="100%" label="card卡片" name="first2"><sirShowCard></sirShowCard></sir-tab>
+        <sir-tab width="100%" label="navmenu导航菜单" name="first3"><sirShowNavmenu></sirShowNavmenu></sir-tab>
+        <!-- <sir-tab label="scrolltop滚动条" name="first4123231"><sirShowscrolltop></sirShowscrolltop></sir-tab> -->
+        <sir-tab width="100%" label="tabs选项卡" name="first5"><sirShowTabs></sirShowTabs></sir-tab>
       </sir-tabs>
     </div>
-    <sir-scrolltop></sir-scrolltop>
+     <sir-scrolltop></sir-scrolltop>
   </div>
 </template>
 
 <script>
 import pageHead from '../indexPage/pageHead'
-import sirContainer from './container'
+import sirShowContainer from './container'
+import sirShowCard from './card'
+import sirShowNavmenu from './navmenu'
+import sirShowScrolltop from './scrolltop'
+import sirShowTabs from './tabs'
 export default {
   data () {
     return {
@@ -27,7 +29,11 @@ export default {
   },
   components: {
     pageHead,
-    sirContainer
+    sirShowContainer,
+    sirShowCard,
+    sirShowNavmenu,
+    sirShowScrolltop,
+    sirShowTabs
   },
   mounted () {
 
@@ -37,9 +43,9 @@ export default {
 
 <style lang="less" scoped>
 .package {
-  height: 2000px;
+  height: 100%;
   .head {
-    /deep/ .title{
+    /deep/ .title {
       border-bottom: 1px solid #e6e6e6;
     }
   }
@@ -47,7 +53,7 @@ export default {
     width: 1200px;
     margin: 0 auto;
     .sitTabs {
-      height: 2000px;
+      height: 100%;
     }
   }
 }

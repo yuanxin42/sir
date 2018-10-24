@@ -17,7 +17,7 @@ export default {
   },
   data () {
     return {
-      scrollTop: '100px',
+      scrollTop: '0px',
       gotop: false
     }
   },

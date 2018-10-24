@@ -33,7 +33,10 @@
             </ul>
 
         </div>
-        <div class="listR"><a href="/package">组件文档</a></div>
+        <div class="listR">
+            <router-link to="/package">组件文档</router-link>
+            <!--<a href="/package">组件文档</a>-->
+        </div>
     </div>
 </template>
 

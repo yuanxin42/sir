@@ -6,15 +6,19 @@ import topackage from '@/components/package/index'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
+  // base: '/dist',
   routes: [
     {
       path: '/',
       name: 'index',
       component: index
-    }, {
+    },
+    {
       path: '/package',
+      name: 'package',
       component: topackage
     }
+
   ]
 })

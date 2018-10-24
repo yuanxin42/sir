@@ -1,5 +1,5 @@
 <template>
-  <div class="header" :class="{header:true,scrolldown:(istop&&gotop)}">
+  <div class="header" :class="{header:true,scrolldown:(istop&&gotop)}" :style="headerstyle">
     <div class="title">
       <a href="#" class="logo">sir组件库</a>
       <input placeholder="Seach components" type="text" class="select">
@@ -18,7 +18,16 @@ export default {
   data () {
     return {
       scrollTop: '0px',
-      gotop: false
+      gotop: false,
+      topnum: 0
+    }
+  },
+  computed: {
+    headerstyle () {
+      let arr = {
+        top: this.topnum
+      }
+      return arr
     }
   },
   components: {
@@ -27,8 +36,14 @@ export default {
     handleScroll () {
       let scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
       let todown = +this.scrollTop.slice(0, this.scrollTop.match(/px$/).index)
-      if (scroll > todown) {
+      console.log(scroll)
+      if (scroll > todown && scroll > 101) {
         this.gotop = true
+        if (scroll < 101) {
+          this.topnum = -(101 - scroll) + 'px'
+        } else {
+          this.topnum = 0 + 'px'
+        }
       } else {
         this.gotop = false
       }
@@ -75,7 +90,6 @@ export default {
 }
 .scrolldown{
   position: fixed;
-  top: 0;
   z-index: 10;
 }
 </style>

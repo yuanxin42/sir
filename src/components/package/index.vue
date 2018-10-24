@@ -7,8 +7,9 @@
         <sir-tab width="100%" label="contain布局" name="first1"><sirShowContainer></sirShowContainer></sir-tab>
         <sir-tab width="100%" label="card卡片" name="first2"><sirShowCard></sirShowCard></sir-tab>
         <sir-tab width="100%" label="navmenu导航菜单" name="first3"><sirShowNavmenu></sirShowNavmenu></sir-tab>
-        <sir-tab width="100%" label="scrolltop滚动条" name="first333"><sirShowScrolltop></sirShowScrolltop></sir-tab>
+        <sir-tab width="100%" label="scrolltop滚动条" name="first4"><sirShowScrolltop></sirShowScrolltop></sir-tab>
         <sir-tab width="100%" label="tabs选项卡" name="first5"><sirShowTabs></sirShowTabs></sir-tab>
+        <sir-tab width="100%" label="codecard代码块" name="first6"><sirShowcodecard></sirShowcodecard></sir-tab>
       </sir-tabs>
     </div>
      <sir-scrolltop></sir-scrolltop>
@@ -22,6 +23,8 @@ import sirShowCard from './card'
 import sirShowNavmenu from './navmenu'
 import sirShowScrolltop from './scrolltop'
 import sirShowTabs from './tabs'
+import sirShowcodecard from './codecard'
+
 export default {
   data () {
     return {
@@ -33,7 +36,8 @@ export default {
     sirShowCard,
     sirShowNavmenu,
     sirShowScrolltop,
-    sirShowTabs
+    sirShowTabs,
+    sirShowcodecard
   },
   mounted () {
 

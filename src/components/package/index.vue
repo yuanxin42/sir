@@ -7,7 +7,7 @@
         <sir-tab width="100%" label="contain布局" name="first1"><sirShowContainer></sirShowContainer></sir-tab>
         <sir-tab width="100%" label="card卡片" name="first2"><sirShowCard></sirShowCard></sir-tab>
         <sir-tab width="100%" label="navmenu导航菜单" name="first3"><sirShowNavmenu></sirShowNavmenu></sir-tab>
-        <!-- <sir-tab label="scrolltop滚动条" name="first4123231"><sirShowscrolltop></sirShowscrolltop></sir-tab> -->
+        <sir-tab width="100%" label="scrolltop滚动条" name="first333"><sirShowScrolltop></sirShowScrolltop></sir-tab>
         <sir-tab width="100%" label="tabs选项卡" name="first5"><sirShowTabs></sirShowTabs></sir-tab>
       </sir-tabs>
     </div>
@@ -52,6 +52,7 @@ export default {
   .contain {
     width: 1200px;
     margin: 0 auto;
+    overflow: hidden;
     .sitTabs {
       height: 100%;
     }

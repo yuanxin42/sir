@@ -1,22 +1,15 @@
 <template>
     <div class="sir-contain">
-        <h3>contain布局</h3>
+        <h3>scrolltop滚动条</h3>
+        <p>右侧小猫效果滚动条，支持属性：scrollTop='100px',默认是400px，超出显示小猫。sirSrc属性，点击小猫跳转的路径，可以设置锚点固定，默认跳www.baidu.com</p>
         <sir-codecard width="100%">
             <div slot="cardHeader">
-                <sir-container>
-                    <sir-header>Header</sir-header>
-                    <sir-main>Main</sir-main>
-                    <sir-footer>Footer</sir-footer>
-                </sir-container>
+                <img src="../../../assets/image/QQ图片20181024150320.png" alt="">
             </div>
             <div slot="cardFotter">
                 // 代码:
 
-                &lt;sir-container&gt;
-                    &lt;sir-header&gt;Header&lt;/sir-header&gt;
-                    &lt;sir-main&gt;Main&lt;/sir-main&gt;
-                    &lt;sir-footer&gt;Footer&lt;/sir-footer&gt;
-                &lt;/sir-container&gt;
+                &lt;sir-scrolltop&gt;&lt;/sir-scrolltop&gt;
             </div>
         </sir-codecard>
     </div>

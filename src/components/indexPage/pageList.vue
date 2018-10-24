@@ -33,7 +33,7 @@
             </ul>
 
         </div>
-        <div class="listR"><a target="black" href="/package">组件文档</a></div>
+        <div class="listR"><a href="/package">组件文档</a></div>
     </div>
 </template>
 

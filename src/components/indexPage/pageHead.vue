@@ -37,7 +37,7 @@ export default {
       let scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
       let todown = +this.scrollTop.slice(0, this.scrollTop.match(/px$/).index)
       console.log(scroll)
-      if (scroll > todown && scroll > 101) {
+      if (scroll > todown && scroll > 202) {
         this.gotop = true
         if (scroll < 101) {
           this.topnum = -(101 - scroll) + 'px'
